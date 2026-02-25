@@ -1,0 +1,24 @@
+font.size : 10.0
+
+text.usetex : True
+
+lines.linewidth : 1.5
+lines.markersize: 4
+
+axes.grid : True
+# axes.prop_cycle : (cycler('color', ['66c2a5', 'fc8d62', '8da0cb'])  + cycler('linestyle', ['-', '--', '-.']))
+axes.prop_cycle : (cycler('color', ['0173B2', '029E73', 'D55E00', 'CC78BC', '56B4E9']))
+
+grid.linestyle : :
+
+xtick.direction : in
+xtick.top : True
+
+ytick.direction : in
+ytick.right: True
+
+figure.constrained_layout.use : True
+
+image.cmap: inferno
+
+savefig.dpi : 300
