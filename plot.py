@@ -430,7 +430,7 @@ data = load_data("GME_over_N-Random-M=2_to_6-N=1_to_10")
 
 lines = []
 
-for i_m in range(5):
+for i_m in [0, 2, 4]:#range(5):
     lower_err = np.fmax(
         data[3 * i_m + 1] - data[3 * i_m + 2], np.zeros(len(data[3 * i_m + 1]))
     )
@@ -444,6 +444,7 @@ for i_m in range(5):
             fmt="o-",
             capsize=2,
             lw=1.5,
+            elinewidth=1,
             label=r"$M =$ " + str(i_m + 2),
         )
     )
@@ -488,6 +489,7 @@ for i_n in range(4):
             fmt="o-",
             capsize=2,
             lw=1.5,
+            elinewidth=1,
             label=r"$N =$ " + str(i_n + 1),
         )
     )
